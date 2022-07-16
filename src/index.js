@@ -20,6 +20,7 @@
 //Practice
 import React from "react";
 import ReactDom from 'react-dom'
+import App from "./App";
 // ReactDom.render(<h2>hello React</h2>,document.getElementById('root'))
 
 // ReactDom.render(
@@ -88,20 +89,39 @@ import ReactDom from 'react-dom'
 //   </>
 //   ,document.getElementById('root'))
 
-let img1 = 'https://picsum.photos/200/300'
-let img2 = 'https://picsum.photos/220/300'
-let img3 = 'https://picsum.photos/230/300'
-let facebook = 'https://www.facebook.com/'
-ReactDom.render(
-  <>
-    <h1 style={{color:'red',textShadow:' 2px 2px #FF0000'}}>Gallery</h1>
-    <img src={img1} />
-    <img src={img2} />
-    <img src={img3} />
-    <br/>
-    <a href={facebook}>facebook</a>
+// let img1 = 'https://picsum.photos/200/300'
+// let img2 = 'https://picsum.photos/220/300'
+// let img3 = 'https://picsum.photos/230/300'
+// let facebook = 'https://www.facebook.com/'
+// ReactDom.render(
+//   <>
+//     <h1 style={{color:'red',textShadow:' 2px 2px #FF0000'}}>Gallery</h1>
+//     <img src={img1} />
+//     <img src={img2} />
+//     <img src={img3} />
+//     <br/>
+//     <a href={facebook}>facebook</a>
+//   </>
+//   ,document.getElementById('root'))
+
+function Items(props)
+{
+  return (
+    <>
+    <img src={props.image} />
+  <h2>{props.price}</h2>
   </>
-  ,document.getElementById('root'))
+  );
+}
+
+ReactDom.render(<>
+  <Items  image ='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfmns5LQjn5imNgcW3cozyKAtjRy7v-2I2kw&usqp=CAU'
+   price='10M' />
+  <Items image = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqJGqNrVAWTmU6agbE6Q5EXpRixpEoXsbe2NIyRA8qM1O8jx3DQ-AswJvN0pULVG_o64I&usqp=CAU' 
+  price='11M'/>
+  <Items image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsd3wFYcHFlU-kEvuUC-_X4o_lipU4Dy-14FdlvwY8mbCFh9T6iltxQcUVM8jVvtrsUhk&usqp=CAU'
+  price = '16M' />
+</>,document.getElementById('root'))
 
 
 
