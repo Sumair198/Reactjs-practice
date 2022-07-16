@@ -89,11 +89,15 @@ import ReactDom from 'react-dom'
 //   ,document.getElementById('root'))
 
 let img1 = 'https://picsum.photos/200/300'
+let img2 = 'https://picsum.photos/220/300'
+let img3 = 'https://picsum.photos/230/300'
 let facebook = 'https://www.facebook.com/'
 ReactDom.render(
   <>
-    <h1 style={{color:'red',textAlign:'center' ,textShadow:' 2px 2px #FF0000'}}>Gallery</h1>
+    <h1 style={{color:'red',textShadow:' 2px 2px #FF0000'}}>Gallery</h1>
     <img src={img1} />
+    <img src={img2} />
+    <img src={img3} />
     <br/>
     <a href={facebook}>facebook</a>
   </>
