@@ -18,9 +18,9 @@
 // reportWebVitals();
 
 //Practice
-import React from "react";
-import ReactDom from 'react-dom'
-import App from "./App";
+// import React from "react";
+// import ReactDom from 'react-dom'
+// import App from "./App";
 // ReactDom.render(<h2>hello React</h2>,document.getElementById('root'))
 
 // ReactDom.render(
@@ -72,7 +72,7 @@ import App from "./App";
 // ReactDom.render(
 //   <>
 //   <h1>Date and Time !!</h1>
-  
+
 //   <p>{`Today date is ${date.toLocaleDateString()}`}</p>
 //   <p>{`Current time is ${date.toLocaleTimeString()}`}</p>
 //   </>
@@ -104,24 +104,34 @@ import App from "./App";
 //   </>
 //   ,document.getElementById('root'))
 
-function Items(props)
-{
-  return (
-    <>
-    <img src={props.image} />
-  <h2>{props.price}</h2>
-  </>
-  );
-}
+// function Items(props)
+// {
+//   return (
+//     <>
+//     <img src={props.image} />
+//   <h2>{props.price}</h2>
+//   </>
+//   );
+// }
 
-ReactDom.render(<>
-  <Items  image ='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfmns5LQjn5imNgcW3cozyKAtjRy7v-2I2kw&usqp=CAU'
-   price='10M' />
-  <Items image = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqJGqNrVAWTmU6agbE6Q5EXpRixpEoXsbe2NIyRA8qM1O8jx3DQ-AswJvN0pULVG_o64I&usqp=CAU' 
-  price='11M'/>
-  <Items image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsd3wFYcHFlU-kEvuUC-_X4o_lipU4Dy-14FdlvwY8mbCFh9T6iltxQcUVM8jVvtrsUhk&usqp=CAU'
-  price = '16M' />
-</>,document.getElementById('root'))
+// ReactDom.render(<> <h1>hello Sumair</h1> <h2>how are u ?</h2>
+//   {/* <Items  image ='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfmns5LQjn5imNgcW3cozyKAtjRy7v-2I2kw&usqp=CAU'
+//    price='10M' />
+//   <Items image = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqJGqNrVAWTmU6agbE6Q5EXpRixpEoXsbe2NIyRA8qM1O8jx3DQ-AswJvN0pULVG_o64I&usqp=CAU' 
+//   price='11M'/>
+//   <Items image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsd3wFYcHFlU-kEvuUC-_X4o_lipU4Dy-14FdlvwY8mbCFh9T6iltxQcUVM8jVvtrsUhk&usqp=CAU'
+//   price = '16M' /> */}
+// </>,document.getElementById('root'))
 
 
+//Practice2
 
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import './index.css'
+
+ReactDOM.render(
+  <>
+    <App/>
+  </>, document.getElementById('root'))
